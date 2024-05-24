@@ -1,0 +1,29 @@
+{% load static %}
+
+<link type="text/css" rel="stylesheet" href="{% static 'First/css/for.css' %} ">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Yinka Enoch Adedokun">
+	<meta name="description" content="Simple Forgot Password Page Using HTML and CSS">
+	<meta name="keywords" content="forgot password page, basic html and css">
+	<title>Forgot Password Page - HTML + CSS</title>
+</head>
+<body>
+<h2 align="center"><a href="/">Go To home page</a></h2>
+	<div class="row">
+		<h1>Forgot Password</h1>
+		<h6 class="information-text">Enter your registered email to reset your password.</h6>
+		<form action="for" method="POST" >
+		<div class="form-group" >
+			<input type="email" name="email" id="user_email" required>
+			<p><label for="username" >Email</label></p>
+			<button onclick="showSpinner()" >Reset Password</button>
+		</div></form>
+		<div class="footer">
+			<h5>New here? <a href="signup">Sign Up.</a></h5>
+			<h5>Already have an account? <a href="signup">Sign In.</a></h5>
+			<p class="information-text"><span class="symbols" title="Lots of love from me to YOU!">&hearts; </span><a href="https://www.facebook.com/adedokunyinka.enoch" target="_blank" title="Connect with me on Facebook">AJK HWS</a></p>
+		</div>
+	</div>
+</body>

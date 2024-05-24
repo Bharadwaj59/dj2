@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% static 'First/css/en.css' %} ">
+<link type="text/css" rel="stylesheet" href="{% static 'First/js/js.css' %} ">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="prompt">
+	Enter the code generated on your mobile device below to log in!
+</div>
+
+<form method="POST" action="entered" method="POST" class="digit-group">
+	{% csrf_token %}
+	<input type="text" name="otp" placeholder="Enter Otp"><br>
+	<br>
+	<input type="submit" name="Sign in" value="Sign in">
+</form>
+</body>
+</html>
